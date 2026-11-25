@@ -210,21 +210,6 @@
       background: var(--accent-soft);
     }
 
-    .btn-outline-sm {
-      background: transparent;
-      color: var(--accent-dark);
-      border: 1px solid var(--border);
-      padding: 8px 12px;
-      font-size: 0.82rem;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .btn-outline-sm:hover {
-      background: var(--surface-soft);
-      border-color: var(--accent);
-    }
-
     .perks {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -260,28 +245,17 @@
       gap: 8px;
       flex-wrap: wrap;
       margin-bottom: 18px;
-      background: #fff;
-      padding: 12px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     }
 
     .filter-btn {
-      background: var(--surface-soft);
+      background: var(--surface);
       border: 1px solid var(--border);
       color: var(--text);
-      padding: 8px 16px;
+      padding: 7px 14px;
       border-radius: 999px;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .filter-btn:hover {
-      background: var(--accent-soft);
-      border-color: var(--accent);
     }
 
     .filter-btn.active {
@@ -292,8 +266,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
       margin-bottom: 36px;
     }
 
@@ -301,45 +275,28 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 20px;
+      padding: 18px;
       box-shadow: 0 6px 18px rgba(43, 29, 36, 0.05);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 16px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(225, 75, 123, 0.08);
-    }
-
-    .card-top {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .tag-row {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
+      gap: 14px;
     }
 
     .tag {
       display: inline-block;
-      font-size: 0.72rem;
+      font-size: 0.74rem;
       font-weight: 700;
       color: var(--accent-dark);
       background: var(--surface-soft);
       padding: 4px 10px;
       border-radius: 999px;
+      margin-bottom: 8px;
     }
 
     .card h3 {
-      font-size: 1.1rem;
-      line-height: 1.3;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
     }
 
     .card p {
@@ -347,50 +304,11 @@
       color: var(--muted);
     }
 
-    .syllabus-box {
-      display: none;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 12px 14px;
-      margin-top: 8px;
-    }
-
-    .syllabus-box.open {
-      display: block;
-    }
-
-    .syllabus-title {
-      font-size: 0.78rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--accent-dark);
-      margin-bottom: 6px;
-    }
-
-    .syllabus-list {
-      padding-left: 18px;
-      font-size: 0.84rem;
-      color: var(--text);
-    }
-
-    .syllabus-list li {
-      margin-bottom: 4px;
-    }
-
-    .card-footer {
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
     .price-row {
       display: flex;
       align-items: baseline;
       gap: 8px;
+      margin-top: 8px;
     }
 
     .price-old {
@@ -400,7 +318,7 @@
     }
 
     .price-now {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: var(--text);
     }
@@ -409,49 +327,41 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 26px;
+      padding: 20px;
       margin-bottom: 24px;
-      box-shadow: var(--shadow);
     }
 
     .info-box h2 {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
     }
 
     .info-box p, .info-box li {
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: var(--muted);
-      line-height: 1.6;
     }
 
     .info-box ul {
       padding-left: 20px;
-      margin-top: 12px;
+      margin-top: 8px;
     }
 
-    .info-box li {
-      margin-bottom: 6px;
-    }
-
+    /* Sección de Comentarios / Reseñas */
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
     }
 
     .review-card {
       background: var(--surface-soft);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 20px;
+      border-radius: 16px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     .review-header {
@@ -463,22 +373,21 @@
 
     .reviewer-name {
       font-weight: 700;
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       color: var(--accent-dark);
     }
 
     .review-rating {
       color: #e14b7b;
-      font-size: 1rem;
+      font-size: 0.98rem;
       letter-spacing: 2px;
       white-space: nowrap;
     }
 
     .review-text {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-style: italic;
       color: var(--text);
-      line-height: 1.5;
     }
 
     .review-course {
@@ -489,13 +398,7 @@
       font-weight: 700;
     }
 
-    .add-review-box {
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px dashed var(--border);
-      text-align: center;
-    }
-
+    /* Drawer / Modal del Carrito */
     .drawer-backdrop {
       position: fixed;
       inset: 0;
@@ -503,7 +406,6 @@
       display: none;
       justify-content: flex-end;
       z-index: 50;
-      backdrop-filter: blur(4px);
     }
 
     .drawer-backdrop.open {
@@ -512,150 +414,117 @@
 
     .drawer {
       width: 100%;
-      max-width: 440px;
+      max-width: 420px;
       background: var(--surface);
       height: 100%;
-      padding: 24px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       overflow-y: auto;
-      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+      box-shadow: -8px 0 30px rgba(0, 0, 0, 0.16);
     }
 
     .drawer-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 16px;
-      margin-bottom: 18px;
-    }
-
-    .drawer-top h3 {
-      font-size: 1.3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .close-btn {
       background: var(--surface-soft);
       border: none;
-      width: 38px;
-      height: 38px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       font-weight: 700;
       cursor: pointer;
       color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-    }
-
-    .close-btn:hover {
-      background: var(--accent-soft);
-      color: var(--accent-dark);
     }
 
     .cart-item {
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 16px;
-      margin-bottom: 12px;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
-      background: var(--bg);
+      gap: 10px;
     }
 
     .cart-item-title {
       font-weight: 700;
-      font-size: 0.98rem;
-      margin-bottom: 4px;
+      font-size: 0.9rem;
     }
 
     .cart-item-sub {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--muted);
     }
 
     .qty-controls {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
     }
 
     .qty-btn {
-      width: 30px;
-      height: 30px;
-      border-radius: 10px;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
       border: 1px solid var(--border);
-      background: #fff;
+      background: var(--bg);
       font-weight: 700;
       cursor: pointer;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .qty-btn:hover {
-      background: var(--surface-soft);
-      border-color: var(--accent);
     }
 
     .field {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .field label {
       display: block;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .field input {
       width: 100%;
-      padding: 12px 16px;
-      border-radius: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
       border: 1px solid var(--border);
-      font-size: 0.95rem;
-      background: var(--bg);
-    }
-
-    .field input:focus {
-      outline: none;
-      border-color: var(--accent);
-      background: #fff;
+      font-size: 0.9rem;
     }
 
     .total-box {
-      border-top: 2px solid var(--border);
-      padding-top: 18px;
-      margin-top: 18px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 12px;
     }
 
     .total-line {
       display: flex;
       justify-content: space-between;
-      font-size: 1.25rem;
+      font-size: 1.08rem;
       font-weight: 800;
-      margin-bottom: 16px;
-      color: var(--accent-dark);
+      margin-bottom: 12px;
     }
 
     .wa-stack {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     .btn-wa-primary {
       background: #1ea853;
       color: #fff;
       width: 100%;
-      font-size: 1rem;
     }
 
     .btn-wa-primary:hover {
@@ -667,7 +536,7 @@
       color: var(--accent-dark);
       border: 1px solid var(--accent);
       width: 100%;
-      font-size: 0.95rem;
+      font-size: 0.86rem;
     }
 
     .btn-wa-secondary:hover {
@@ -675,22 +544,21 @@
     }
 
     .helper-note {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--muted);
-      margin-top: 10px;
+      margin-top: 6px;
       text-align: center;
     }
 
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(30, 16, 23, 0.6);
+      background: rgba(30, 16, 23, 0.5);
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 20px;
+      padding: 16px;
       z-index: 60;
-      backdrop-filter: blur(4px);
     }
 
     .modal-backdrop.open {
@@ -699,19 +567,19 @@
 
     .modal-box {
       background: var(--surface);
-      border-radius: 24px;
-      max-width: 500px;
+      border-radius: 20px;
+      max-width: 480px;
       width: 100%;
-      padding: 28px;
+      padding: 22px;
       border: 1px solid var(--border);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--shadow);
     }
 
     footer {
       text-align: center;
-      padding: 36px 16px;
+      padding: 24px 16px;
       color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
@@ -765,11 +633,10 @@
       </div>
 
       <div class="filters" id="filterBar">
-        <button type="button" class="filter-btn active" data-cat="Todos">Todas las materias</button>
-        <button type="button" class="filter-btn" data-cat="Filosofía">Filosofía</button>
-        <button type="button" class="filter-btn" data-cat="Didáctica">Didáctica</button>
+        <button type="button" class="filter-btn active" data-cat="Todos">Todos</button>
         <button type="button" class="filter-btn" data-cat="Psicología">Psicología</button>
         <button type="button" class="filter-btn" data-cat="Ciencias Sociales">Ciencias Sociales</button>
+        <button type="button" class="filter-btn" data-cat="Filosofía">Filosofía</button>
         <button type="button" class="filter-btn" data-cat="Ciencias">Ciencias</button>
         <button type="button" class="filter-btn" data-cat="Packs">Packs</button>
       </div>
@@ -791,23 +658,17 @@
         Antes de comprar podés revisar cómo organizamos los títulos, definiciones clave, cuadros comparativos y
         ejemplos para que el estudio sea ágil y visual.
       </p>
-      <div style="margin-top: 16px;">
+      <div style="margin-top: 12px;">
         <button type="button" class="btn btn-secondary" id="openSampleBtn2">Abrir vista previa de muestra</button>
       </div>
     </section>
 
     <section id="resenas" class="info-box">
-      <h2>💬 Lo que dicen nuestros estudiantes</h2>
-      <p>Experiencias de quienes ya aprobaron con nuestros resúmenes.</p>
-
+      <h2>♡ Comentarios</h2>
+      <p>
+        Espacio reservado para ir sumando comentarios reales de estudiantes a medida que te vayan escribiendo.
+      </p>
       <div class="reviews-grid" id="reviewsContainer"></div>
-
-      <div class="add-review-box">
-        <p style="margin-bottom: 12px; font-weight: 600; color: var(--accent-dark);">¿Ya estudiaste con nuestros apuntes?</p>
-        <a href="https://wa.me/5491140668440?text=¡Hola%20Guadalupe!%20Quiero%20dejarles%20un%20comentario%20sobre%20los%20apuntes%20de%20Entre%20Apuntes%20♡" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="background: var(--accent-soft); border-color: var(--accent);">
-          💬 Dejanos tu comentario por WhatsApp
-        </a>
-      </div>
     </section>
 
     <section id="contacto" class="info-box">
@@ -844,4 +705,101 @@
         </div>
       </div>
 
-      <div class="to
+      <div class="total-box">
+        <div class="total-line">
+          <span>Total estimado</span>
+          <span id="cartTotal">$0</span>
+        </div>
+
+        <div class="wa-stack">
+          <button type="button" class="btn btn-wa-primary" id="sendGuadaBtn">
+            Enviar pedido a Guadalupe (Principal)
+          </button>
+          <button type="button" class="btn btn-wa-secondary" id="sendCamiBtn">
+            Si no contesta, enviar a Cami (Secundario)
+          </button>
+        </div>
+        <p class="helper-note">
+          Se abrirá WhatsApp con tu pedido armado listo para enviar.
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal-backdrop" id="sampleModal">
+    <div class="modal-box">
+      <div class="drawer-top">
+        <h3>📄 Muestra — Estructura de un Resumen</h3>
+        <button type="button" class="close-btn" id="closeSampleBtn" aria-label="Cerrar muestra">✕</button>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 12px;">
+        Cada archivo incluye:
+      </p>
+      <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text); margin-bottom: 16px;">
+        <li>Desarrollo claro de autores y conceptos centrales.</li>
+        <li>Palabras clave destacadas para ubicar ideas rápido.</li>
+        <li>Cuadros comparativos y síntesis final para repasar.</li>
+      </ul>
+      <button type="button" class="btn btn-primary" style="width: 100%;" id="closeSampleBtn2">
+        Volver al catálogo
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    Entre Apuntes ♡ · Cami &amp; Guada · Hecho con cariño para estudiar mejor.
+  </footer>
+
+  <script>
+    // Números configurados: Guadalupe (principal) y Cami (secundario)
+    const WHATSAPP_PRINCIPAL = "5491140668440"; // Guadalupe: +54 9 11 4066-8440
+    const WHATSAPP_SECUNDARIO = "5491164110663"; // Cami: 1164110663
+
+    const PRODUCTS = [
+      {
+        id: "psico-1",
+        title: "Psicología — Resumen Completo",
+        cat: "Psicología",
+        desc: "Conceptos clave, corrientes, esquemas visuales y guía de repaso para parciales.",
+        price: 6300,
+        oldPrice: 7000
+      },
+      {
+        id: "soc-estado",
+        title: "Sociedad y Estado — Guía Integral",
+        cat: "Ciencias Sociales",
+        desc: "Modelos de Estado, procesos históricos y cuadros comparativos listos para estudiar.",
+        price: 5850,
+        oldPrice: 6500
+      },
+      {
+        id: "ipc",
+        title: "IPC (Introducción al Pensamiento Científico)",
+        cat: "Ciencias",
+        desc: "Razonamientos, hipótesis, contrastación y ejercicios resueltos paso a paso.",
+        price: 5850,
+        oldPrice: 6500
+      },
+      {
+        id: "filo",
+        title: "Filosofía — Autores y Conceptos",
+        cat: "Filosofía",
+        desc: "Síntesis clara de textos filosóficos, preguntas guía y definiciones esenciales.",
+        price: 5850,
+        oldPrice: 6500
+      },
+      {
+        id: "pack-cbc",
+        title: "Pack 3 Materias a Elección (10% OFF)",
+        cat: "Packs",
+        desc: "Elegí tres resúmenes del catálogo con descuento aplicado y envío en el día.",
+        price: 15300,
+        oldPrice: 17000
+      },
+      {
+        id: "clase-apoyo",
+        title: "Clase de Apoyo / Consulta (1 hora)",
+        cat: "Packs",
+        desc: "Repaso focalizado de temas difíciles, dudas de parcial y técnicas de estudio.",
+  
+  
